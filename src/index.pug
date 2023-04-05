@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+	head
+		include pug/head
+	body
+		.create
+			include pug/header
+			.container
+				.create-main
+					.create-overview
+						h1.create-overview__title 
+							| Explore, Buy and Sell the
+							span  Best NFTs!
+						.create-overview__btn
+							button.explore(type="submit") Explore
+							button(type="submit") Create
+						.create-overview__info
+							div.num
+								p 32k+
+								| Artworks
+							div.num
+								p 20k+
+								| Auctions
+							div.num
+								p 12k+
+								| Creators
+					.create-nft
+						.create-nft__header
+							.create-nft__info
+								p.sup Current Bid
+								p.sub 0.99 ETH
+							.create-nft__info
+								p.sup Ends in
+								p.sub 25 hrs
+						.create-nft__footer
+							.open
+								p.music Artist
+								p.email @wzard
+							button(type="submit") Start Bid
+					button.create-arrow
+						img(src="img/arrow.svg" alt="arrow")
+
+			include pug/footer

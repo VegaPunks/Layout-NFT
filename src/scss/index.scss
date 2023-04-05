@@ -1,0 +1,31 @@
+body {
+	background: $bg;
+	color: $many;
+	@include font("Work Sans", 400)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 20px;
+}
+
+a,
+button {
+	color: $many;
+}
+
+.container {
+	max-width: 1390px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./common/index";
+

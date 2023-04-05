@@ -1,0 +1,164 @@
+.create {
+	padding-top: 37px;
+	min-height: 100%;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 47%;
+		height: 100%;
+		background: rgba(79, 70, 78, 0.45);
+		backdrop-filter: blur(15px);
+		z-index: -2;
+	}
+}
+
+.create-main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.create-overview {
+	max-width: 700px;
+	&__title {
+		color: $many;
+		@include font('Oxanium', 700);
+		font-size: 85px;
+		line-height: 130px;
+		margin-bottom: 77px;
+		span {
+			color: $yellow;
+		}
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		grid-gap: 46px;
+		margin-bottom: 120px;
+		button {
+			text-align: center;
+			color: $white;
+			background: #32272D;
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 36px;
+			border: 1px solid #32272D;
+			padding: 23px 76px;
+		}
+		.explore {
+			border: 1px solid $yellow;
+			background: $yellow;
+			color: $black
+		}
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		grid-gap: 104px;
+		.num {
+			color: #9B9E9A;
+			font-size: 24px;
+			line-height: 35px;
+			text-align: center;
+			p {
+				@include font('Oxanium', 700);
+				color: $many;
+				font-size: 62px;
+				line-height: 78px;
+			}
+		}
+	}
+}
+
+.create-nft {
+	background: url("../img/nft.jpg");
+	max-width: 550px;
+	width: 100%;
+	height: 720px;
+	padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+	right: 25.2%;
+	z-index: -1;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		background: linear-gradient(92.8deg, rgba(255, 137, 61, 0.09) -52.37%, rgba(250, 250, 250, 0.9) 137.41%);;
+		opacity: 0.95;
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+		backdrop-filter: blur(22.5px);
+		padding: 18px 34px;
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__info {
+		.sup {
+			color: #E4DEE7;
+			@include font('Oxanium', 500);
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.08em;
+			text-transform: capitalize;
+		}
+		.sub {
+			color: $white;
+			@include font('Oxanium', 700);
+			font-size: 32px;
+			line-height: 40px;
+		}
+	}
+	&__footer {
+		background: $white;
+		display: flex;
+		justify-content: space-between;
+		padding: 34px 40px 34px 60px;	
+		.open {
+			justify-content: space-between;
+			color: #16091B;
+			line-height: 35px;
+
+			.music {
+				letter-spacing: 0.07em;
+				font-size: 28px;
+				@include font('Oxanium', 600);
+			}
+			.email {
+				color: #594D5E;
+				font-size: 24px;
+			}
+		}
+		button {
+			background: $yellow;
+			text-align: center;
+			color: $black;
+			padding: 23px 44px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+}
+
+.create-arrow {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 56%;
+	transform: translate(-50%);
+	transform: translateX(-50%) translateY(100%);
+	background: rgba(109, 91, 114, 0.4);
+	box-shadow: 0px 14px 79px rgba(134, 19, 165, 0.1);
+	backdrop-filter: blur(20px);
+	width: 156px;
+	height: 156px;
+	z-index: 10;
+	img {
+		width: 25px;
+	}
+}
